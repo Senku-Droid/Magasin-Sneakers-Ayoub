@@ -35,6 +35,24 @@ function afficherProduits(data) {
     });
 }
 
+// role: affiche les services dans la section correspondante
+// parametres: data (objet JSON)
+// return: rien (affichage des services)
+function afficherServices(data) {
+    const servicesContainer = document.querySelector("#services-container");
+    servicesContainer.innerHTML = "";
+    data.services.forEach((service) => {
+        const serviceDiv = document.createElement("div");
+        serviceDiv.classList.add("card");
+        serviceDiv.innerHTML = `
+            <img src="${service.image}" alt="${service.nom}" />
+            <h3>${service.nom}</h3>
+            <p>${service.description}</p>
+        `;
+        servicesContainer.appendChild(serviceDiv);
+    });
+}
+
 // role: recupere le fichier json puis lance les fonctions d'affichage
 // parametres: aucun
 // return: rien
@@ -45,6 +63,7 @@ function chargerDonnees() {
             afficherHero(data);
             afficherAvantages(data);
             afficherProduits(data);
+            afficherServices(data);
         });
 }
 
@@ -57,22 +76,12 @@ chargerDonnees();
 
 const header = document.querySelector("header");
 
-// On garde la position du scroll precedente.
-let ancienScroll = 0;
-
 window.addEventListener("scroll", function () {
-	// Position actuelle du scroll.
-	const nouveauScroll = window.scrollY;
-
-	// Si on descend, on cache le header.
-	if (nouveauScroll > ancienScroll) {
-		header.classList.add("header-hidden");
-	} else {
-		// Si on remonte, on affiche le header.
-		header.classList.remove("header-hidden");
-	}
-
-	// On met a jour pour le prochain scroll.
-	ancienScroll = nouveauScroll;
+    // Le header revient seulement quand on est tout en haut.
+    if (window.scrollY <= 0) {
+        header.classList.remove("header-hidden");
+    } else {
+        header.classList.add("header-hidden");
+    }
 });
 

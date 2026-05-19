@@ -42,15 +42,18 @@
   "services": [
     {
       "nom": "Personnalisation",
-      "description": "Personnalisez vos sneakers pour un style unique. Choisissez vos couleurs, motifs et matériaux préférés pour des chaussures qui reflètent votre personnalité."
+      "description": "Personnalisez vos sneakers pour un style unique. Choisissez vos couleurs, motifs et matériaux préférés pour des chaussures qui reflètent votre personnalité.",
+      "image": "assets/1000117964.png"
     },
     {
       "nom": "Recyclage",
-      "description": "Participez à notre programme de recyclage. Ramenez vos anciennes sneakers BonPied pour qu'elles soient recyclées de manière responsable, contribuant ainsi à la réduction des déchets."
+      "description": "Participez à notre programme de recyclage. Ramenez vos anciennes sneakers BonPied pour qu'elles soient recyclées de manière responsable, contribuant ainsi à la réduction des déchets.",
+      "image": "assets/1000117966.png"
     },
     {
       "nom": "Événements Responsables",
-      "description": "Rejoignez-nous lors de nos événements responsables. Des initiatives locales pour sensibiliser à la durabilité et promouvoir un mode de vie éco-conscient."
+      "description": "Rejoignez-nous lors de nos événements responsables. Des initiatives locales pour sensibiliser à la durabilité et promouvoir un mode de vie éco-conscient.",
+      "image": "assets/1000117968.png"
     }
   ],
   "temoignages": [
