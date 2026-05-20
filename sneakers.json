@@ -11,7 +11,7 @@
     {
       "nom": "Sneakers Classic",
       "description": "Adoptez le style classique avec nos sneakers éco-sourcés. Conçues avec des matériaux recyclés, elles allient confort, durabilité et élégance.",
-      "image": "https://nico-on-web.github.io/sneakers-assignement-js/images/paire1.png"
+      "image": "assets/diff-couleur/beige.png"
     },
     {
       "nom": "Sneakers Urbaines",
@@ -43,17 +43,20 @@
     {
       "nom": "Personnalisation",
       "description": "Personnalisez vos sneakers pour un style unique. Choisissez vos couleurs, motifs et matériaux préférés pour des chaussures qui reflètent votre personnalité.",
-      "image": "assets/1000117964.png"
+      "image": "assets/1000117964.png",
+      "bouton": "Personnaliser"
     },
     {
       "nom": "Recyclage",
       "description": "Participez à notre programme de recyclage. Ramenez vos anciennes sneakers BonPied pour qu'elles soient recyclées de manière responsable, contribuant ainsi à la réduction des déchets.",
-      "image": "assets/1000117966.png"
+      "image": "assets/1000117966.png",
+      "bouton": "Recycler maintenant"
     },
     {
       "nom": "Événements Responsables",
       "description": "Rejoignez-nous lors de nos événements responsables. Des initiatives locales pour sensibiliser à la durabilité et promouvoir un mode de vie éco-conscient.",
-      "image": "assets/1000117968.png"
+      "image": "assets/1000117968.png",
+      "bouton": "Participer"
     }
   ],
   "temoignages": [
@@ -62,23 +65,21 @@
       "typeExperience": "Sneakers Urbaines",
       "commentaire": "Les sneakers urbaines de BonPied sont incroyables. Elles sont confortables, stylées et le fait qu'elles soient éco-sourcées me donne encore plus de raisons de les adorer. Merci pour cette superbe collection !",
       "note": 4,
-      "image":"assets/Emma.png"
-    
+      "image": "assets/Emma.png"
     },
     {
       "prenom": "Louis",
       "typeExperience": "Personnalisation",
       "commentaire": "J'ai personnalisé mes propres sneakers chez BonPied, et elles sont tout simplement géniales. Le processus était facile, et le résultat final correspond parfaitement à ce que je voulais. Une expérience exceptionnelle !",
       "note": 5,
-      "image":"assets/Louis.png"
-    
+      "image": "assets/Louis.png"
     },
     {
       "prenom": "Léa",
       "typeExperience": "Recyclage",
       "commentaire": "Je suis reconnaissante que BonPied offre un programme de recyclage. C'est agréable de savoir que mes anciennes sneakers sont recyclées de manière responsable. Une initiative géniale !",
       "note": 5,
-      "image":"assets/Lea.png"
+      "image": "assets/Lea.png"
     }
   ]
 }
