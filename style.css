@@ -16,8 +16,16 @@ body{
 }
 
 main{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.content-container {
     width: min(1200px, calc(100% - 64px));
-    margin: 20px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -90,9 +98,6 @@ header.header-hidden{
     padding: 24px 40px;
     box-shadow: none;
     width: 100%;
-    margin-left: -40px;
-    margin-right: -40px;
-    padding-right: 40px;
 }
 
 .bg-hero {
@@ -148,9 +153,6 @@ header.header-hidden{
     background-size: cover;
     background-position: center;
     width: 100%;
-    margin-left: -40px;
-    margin-right: -40px;
-    padding-right: 40px;
 }
 
 .section-avantages h2 {
@@ -395,5 +397,70 @@ header.header-hidden{
     font-size: 14px;
     color: #1E2522;
     font-weight: bold;
+}
+
+/* Style pour le footer */
+
+.footer {
+    width: 100%;
+    background-color: #1E2522;
+    color: #f5f4f1;
+    padding: 42px 32px 22px;
+    margin-top: 28px;
+}
+
+.footer-content {
+    width: min(1200px, calc(100% - 64px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.footer-col h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #9EE2A9;
+}
+
+.footer-col p,
+.footer-col li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #f5f4f1;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #f5f4f1;
+    transition: color 0.25s ease;
+}
+
+.footer-col a:hover {
+    color: #9EE2A9;
+}
+
+.footer-bottom {
+    width: min(1200px, calc(100% - 64px));
+    margin: 24px auto 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(245, 244, 241, 0.2);
+    text-align: center;
+    font-size: 14px;
+    color: #d7ddd8;
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
