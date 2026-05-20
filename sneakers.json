@@ -61,19 +61,24 @@
       "prenom": "Emma",
       "typeExperience": "Sneakers Urbaines",
       "commentaire": "Les sneakers urbaines de BonPied sont incroyables. Elles sont confortables, stylées et le fait qu'elles soient éco-sourcées me donne encore plus de raisons de les adorer. Merci pour cette superbe collection !",
-      "note": 4
+      "note": 4,
+      "image":"assets/Emma.png"
+    
     },
     {
       "prenom": "Louis",
       "typeExperience": "Personnalisation",
       "commentaire": "J'ai personnalisé mes propres sneakers chez BonPied, et elles sont tout simplement géniales. Le processus était facile, et le résultat final correspond parfaitement à ce que je voulais. Une expérience exceptionnelle !",
-      "note": 5
+      "note": 5,
+      "image":"assets/Louis.png"
+    
     },
     {
       "prenom": "Léa",
       "typeExperience": "Recyclage",
       "commentaire": "Je suis reconnaissante que BonPied offre un programme de recyclage. C'est agréable de savoir que mes anciennes sneakers sont recyclées de manière responsable. Une initiative géniale !",
-      "note": 5
+      "note": 5,
+      "image":"assets/Lea.png"
     }
   ]
 }
