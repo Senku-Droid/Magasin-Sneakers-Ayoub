@@ -129,7 +129,7 @@ header.header-hidden {
 
 .hero p {
     font-size: 25px;
-    color: #222926;
+    color: #ffffff;
     max-width: 900px;
     line-height: 1.4;
     padding-left: 25px;
@@ -557,6 +557,12 @@ header.header-hidden {
 /* Tablette : ecrans jusqu'a 768px */
 @media (max-width: 768px) {
 
+    /* Fix iOS Safari : background-attachment fixed est casse sur mobile */
+    body {
+        background-attachment: scroll;
+        scrollbar-gutter: auto;
+    }
+
     header {
         padding: 16px 20px;
     }
@@ -598,9 +604,19 @@ header.header-hidden {
         width: calc(100% - 32px);
     }
 
+    /* Les avis ne depassent pas la largeur de l'ecran */
+    .avis {
+        min-width: 0;
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    /* Services : 1 colonne sur tablette etroite */
+    #services-container {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -616,18 +632,22 @@ header.header-hidden {
         display: none;
     }
 
+    .hero {
+        padding: 20px 16px;
+    }
+
     .hero h1 {
         font-size: 26px;
-        padding-left: 8px;
+        padding-left: 0;
     }
 
     .hero p {
         font-size: 15px;
-        padding-left: 8px;
+        padding-left: 0;
     }
 
     .btn {
-        margin-left: 8px;
+        margin-left: 0;
         font-size: 14px;
     }
 
