@@ -147,14 +147,23 @@ function cercleNoir(nomSneaker) {
 
 // role: affiche ou cache le header en fonction du scroll
 const header = document.querySelector("header");
+let dernierScrollY = window.scrollY;
 
 window.addEventListener("scroll", function () {
-    // Le header revient quand on et57
-    if (window.scrollY <= 0) {
+    const scrollActuel = window.scrollY;
+
+    // Toujours afficher le header quand on est en haut de page
+    if (scrollActuel <= 0) {
         header.classList.remove("header-hidden");
-    } else {
+    } else if (scrollActuel > dernierScrollY && scrollActuel > 80) {
+        // Descente: on cache le header
         header.classList.add("header-hidden");
+    } else if (scrollActuel < dernierScrollY) {
+        // Remontee: on re affiche le header
+        header.classList.remove("header-hidden");
     }
+
+    dernierScrollY = scrollActuel;
 });
 
 // role: changer la couleur de la sneakker clasic
