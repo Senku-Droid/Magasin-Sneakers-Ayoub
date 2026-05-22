@@ -1,5 +1,5 @@
 // role: affiche les infos du hero dans la page
-// parametres: data objet JSON avec les donnees
+// parametres: data objet JSON 
 // return: rien la fonction modifie juste le HTML
 function afficherHero(data) {
     document.querySelector("#titre").textContent = data.nomCommercial;
@@ -122,6 +122,8 @@ function chargerDonnees() {
 
 chargerDonnees();
 
+
+// constante pour la couleur des chaussures qui ne change pas 
 const couleursParProduit = {
     "Sneakers Urbaines": ["#1f1f1f", "#4f46e5", "#0ea5e9", "#f97316"],
     "Sneakers Légères": ["#f5f5f4", "#a8a29e", "#60a5fa", "#34d399"],
