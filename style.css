@@ -112,7 +112,7 @@ header.header-hidden {
 }
 
 .bg-hero {
-    background-image: url("assets/1000117948.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url("assets/1000117948.png");
     background-size: cover;
     background-position: center;
     width: 100%;
